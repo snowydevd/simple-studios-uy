@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  background: transparent;
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #5c5858;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f5f5f5;
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #cacaca;
+}
+
+.gradient {
+  background: #0872cf;
+  background: linear-gradient(to right, #0872cf 23%, #6c76cf 77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body {
+  background-color: black;
+}
+
+.rotating {
+  animation: rotate 1.5s linear infinite;
+}
+.shadow-project {
+  box-shadow: -6px 10px 32px 0px rgba(222, 214, 214, 0.75);
+  -webkit-box-shadow: -6px 10px 32px 0px rgba(222, 214, 214, 0.75);
+  -moz-box-shadow: -6px 10px 32px 0px rgba(222, 214, 214, 0.75);
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  width: 330px;
+  height: 390px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  padding: 12px;
+}
+
+.swiper-slide:nth-child(1n) {
+  background-color: rgb(61, 61, 61);
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: rgb(39, 39, 39);
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: rgb(49, 49, 49);
+}
+
+.aslSlider {
+  background-image: url("../public//asl.svg");
+  background-repeat: no-repeat;
+}
