@@ -47,7 +47,10 @@ export default function ContactForm() {
   };
 
   return (
-    <main className="w-full lg:w-3/4 text-white flex flex-col justify-center items-center mt-16">
+    <main
+      className="w-full lg:w-3/4 text-white flex flex-col justify-center items-center mt-16"
+      id="contact"
+    >
       <h1 className="text-7xl lg:text-9xl font-bold">Contacto</h1>
       <form method="POST" className="w-full p-5 ">
         {/* FULL NAME */}
